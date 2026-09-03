@@ -1,0 +1,11 @@
+# Core (required)
+numpy>=1.24
+
+# Optional: if installed, HarvestHavocEnv subclasses gymnasium.Env and uses
+# real gymnasium.spaces, so it drops into SB3 / RLlib / CleanRL. Without it the
+# shim in harvest_havoc/spaces.py provides the same API on numpy alone.
+# gymnasium>=0.29
+
+# Optional: only for `pytest -q`; tests also run via
+#   python tests/test_harvest_havoc.py
+# pytest>=7.0
